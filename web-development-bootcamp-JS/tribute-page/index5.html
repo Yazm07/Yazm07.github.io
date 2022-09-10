@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    <title>Tipo de redes sociales</title>
+    <style>
+        html, body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background:#feeafa;
+            color: #3a3a3a;
+            font-family: 'Playfair Display', serif;
+        }
+        #header{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+
+        #main-content-container {
+            display: flex;
+     
+        }
+
+        #main-content {
+            flex: 6;
+            padding: 10px 20% 10px 10px;
+        }
+
+        .main-content__img--full-width {
+            width: 100%;
+        }
+
+        #footer {
+            padding: 0 20px 20px 20px;
+            margin-top: auto;
+            display: flex;
+            background: #ffb5a7;
+        }
+
+        .footer__section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .social__networks {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .social__network {
+            display: flex;
+            align-items: center;
+        }
+
+        .social__icon {
+            font-size: 32px;
+        }
+
+        .social__icon-handler {
+            margin-left: 10px;
+        }
+
+        input[type=email], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            transition: 0.5s;
+            outline: none;
+        }
+
+        input[type=email]:focus, textarea:focus {
+            border: 3px solid #555;
+        }
+
+        input[type=submit] {
+            background: #666655;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+    </style>
+</head>
+<body>
+<header id="header">
+    <h1> Tipos de redes sociales </h1>
+</header>
+<nav>
+  <li><a href="Index3.html">Volver a la pagina anterior </a></li>
+</nav>
+  <h2> Cuando surgieron</h2>
+
+<p>El tipo de red social generalmente se puede  dividir en diferentes tipos de acuerdo al objetivo en el que un usuario crea un perfil, más común de estas son cuatro horas, las cuales son:</p>
+<p><b>Red social de las relaciones:</b> Puedes estar pensando, ¿pero el propósito de las redes sociales no es justamente relacionarse?, si el objetivo de la mayoría de ellas es este, pero hay otras que no se enfocan en esto, uno de los casos más conocidos es Facebook, el cual el propósito es conectar con personas y podemos citar muchas redes que también encajan en otros tipos, como Instagram, LinkedIn, Twitter. Entre otras.</p>
+<center><img src="https://ilastec.com/wp-content/uploads/2021/08/redes-sociales-para-mi-negocio.jpg" style="width: 350px; ;"></center>
+<p><b>Red social de entretenimiento:</b> Estas son las que su objetivo principal no es relacionarse con otras personas, sino consumir contenido, por ejemplo, el ícono más conocido en YouTube es la mayor plataforma en la que se distribuyen vídeos del mundo y su objetivo es publicar y ver vídeos. Otro es Pinterest, en la que hay personas que publican y consumen imágenes.</p>
+<center><img src="https://ciberestetica.files.wordpress.com/2019/06/8adea-rr.ss_.2bentretenimiento.png" style="width: 350px; ;"></center>
+<p><b>Red social profesional:</b> Estas son en las que un usuario tiene como objetivo crear relaciones profesionales con otras personas, divulgar proyectos y conquistar profesionales, En esta se presenta su currículum y habilidades, además de conseguir indicaciones, empleos, entre otros. LinkedIn es una red social profesional más conocida y utilizada, pero también existen otras, como por ejemplo de Bebee, Bayt, Xing y Viadeo, Existen redes de otro tipo o que no son exclusivamente para este tipo de relaciones o no cuentan con este fin principal, como por ejemplo Facebook, Instagram, YouTube, Twitter y Pinterest.</p>
+<center><img src="http://www.urbecom.com/blog/wp-content/uploads/2011/09/redes-sociales-profesionales.jpg"></center>
+<p><b>Red social de nicho:</b>  estas son aquellas que son dirigidas a un público específico ya sea de manera profesional o personal que se tienen intereses en común específicamente. Una de las más emblemáticas es TripAdvisor en insta. Los usuarios atribuyen notas y comentarios a atracciones relacionadas a un sector gastronómico o turístico. O la otra es DevianArt o Behance en donde los artistas promueven sus trabajos visualmente.  existe también Goodreads los lectores hacen reseñas de libros y los recomiendan. estas son solo algunas, pero existe un campo bastante amplio.</p>
+<center><img src="https://roincrease.net/wp-content/uploads/2021/06/redes-sociales-de-nicho.jpg" style="width: 350px;"></center>
+ <footer id="footer">
+    <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-github-original social__icon"></i></span>
+                <span class="social__icon-handler"> <a href="https://github.com/Yazm07"> @Yazm07 </a> </span>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="footer__more-sites footer__section">
+        <h2>Otras de mis paginas</h2>
+<div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-website"></i></span>
+                <span class="sweb__icon-handler"> <a href="index4.html"> Historia de las redes sociales </a> </span>
+            </div>
+            <div class="social__network"></div>
+                <span class="social__icon-container"><i class="lni lni-website"></i></span>
+                <span class="sweb__icon-handler"> <a href="index6.html"> Redes sociales mas populares</a> </span>
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2? family= Playfair+Display:ital@1 & display=swap" rel="stylesheet">
+<?xml version="1.0" encoding="utf-8"?>
+<link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <title> Mi primera pagina</title>
+
+<style>
+ html, body{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+ }
+
+ body{
+  margin:0;
+  font-family: 'Playfair Display', serif;
+   background: #D9DBF1;
+  color:#3a3a3a;
+ }
+
+ #header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+ }
+        #navigation-bar ul {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        #navigation-bar li {
+            display: inline-block;
+        }
+
+        #navigation-bar li a {
+            display: block;
+            color: #665;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #navigation-bar li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        #navigation-bar li a.active {
+            color: #fff;
+            background-color: #665;
+        }
+
+        #navigation-bar .menu__hamburger-icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            #navigation-bar li:not(:first-child) {
+                display: none;
+            }
+            #navigation-bar li.menu__hamburger-icon {
+                display: block;
+                float: right;
+            }
+            #navigation-bar.responsive {
+                position: relative;
+            }
+            #navigation-bar.responsive .menu__hamburger-icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            #navigation-bar.responsive .menu__hamburger-icon a {
+                color: #fff;
+            }
+            #navigation-bar.responsive li {
+                float: none;
+                display: block !important;
+            }
+            #navigation-bar.responsive li a{
+                text-align: left;
+            }
+        }
+ #main-content-container{
+  display:flex
+ }
+
+ #main-content{
+  flex:6;
+  padding:10px 20% 10px 10px;
+ }
+
+ .main-content__img--full-width{
+  width:100%;
+ }
+      #links-sidebar{
+          flex:2;
+          padding:10px;
+      }
+      #links-sidebar ul{
+          padding:0 0 0 10px;
+      }
+      #links-sidebar li{
+          list-style:none;
+      }
+
+ #footer{
+  padding:0 20px 20px 20px;
+  margin-top:auto;
+  display:flex;
+  background:#A3C4BC;
+ }
+
+ .footer__section{
+  flex:1;
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+ }
+ .social__networks{
+  display:flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+ .social__network{
+  display:flex;
+  align-items:center
+ }
+ .social__icon{
+  font-size:32px
+ }
+ .social__icon-handler{
+  margin-left:10px;
+ }
+ a{
+  text-decoration:none;
+  color:inherit;
+ }
+ a:hover{
+  text-decoration:underline;
+  text-underline-offset: 3px;
+ }
+ input[type=email], textarea{
+  width:100%;
+  padding:12px 20px;
+  margin: 8px 0;
+  box-sizing:border-box;
+  border: 3px solid #ccc;
+   transition: 0.5s;
+  outline: none;
+ }
+ input[type=email]> focus, testarea:focus{
+  border: 3px solid #555
+ imput[type=submit]{
+  background:#666655
+  border:none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration:none;
+  margin: 4px 2px;
+cursor:pointer>
+  }
+ a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+
+</style>
+ <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+</head>
+  <body style:"display:flex; flex-direction:column;height:100%;">
+  <header id="header" style:"display:flex;">
+<center><img src="http://www.asesorian.com/imagenes/redes.png"></center>
+  </header>
+
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="index4.html">Página 2</a></li>
+        <li><a href="index5.html">Página 3</a></li>
+        <li><a href="index6.html">Página 4</a></li>
+        <li class="menu__hamburger-icon">
+            <a  href="javascript:void(0);" onclick="myFunction()">
+                <i class="lni lni-menu"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+    <div id="main-content-container">
+      
+  <aside id="links-sidebar">
+     <h2>Sitios relacionados</h2>
+    <ul>
+       <li><a href="index4.html">Historia de las redes sociales</a></li>
+
+       <li><a href="index5.html">Tipo de redes sociales</a></li>
+       <li><a href="index6.html">Redes sociales mas populares</a></li>
+   </ul>
+   </aside>
+
+
+    <section id="main-content" style: "flex: 6; pading-right: 20%;">
+      <img src="redes_sociales.jpeg" alt="Redes sociales" class="main-content__img--full-width">
+    <h2> ¿Qué son las redes sociales?</h2>
+       <p>En las redes sociales existe un mundo virtual, en el que existen sitios y aplicaciones, estas operan de manera profesional, de relación, entre otras. Su principal función es intercambiar información entre personas o empresas. Las estructuras que se pueden encontrar en Internet están formadas por personas u organizaciones en las cuales tienen intereses o valores comunes. A través de ellas se han creado relaciones entre individuos, empleo, empresas. Sin jerarquía o límites físicos.</p>
+<p>Cuando uno escucha la palabra de redes sociales, inmediatamente se nos llega a la mente aplicaciones como Facebook, Twitter, Instagram, Snapchat. WhatsApp, ya que estas son muy actuales y se puede decir que están de moda, pero este término desde tiempo antiguo se ha utilizado en la sociología, por ejemplo, para analizar interacciones entre individuos, grupos, organizaciones o sociedades estas a finales del siglo XIX. Actualmente en lo que conocemos como Internet han surgido discusiones como por ejemplo, la falta de privacidad pero otra ventaja de esta es que ha servido para poder convocar manifestaciones públicas para una protesta.</p>
+
+   <h2>Ventajas de las redes sociales</h2>
+      <p>Actualmente, las redes sociales son parte de la rutina de las personas de todo el mundo. Actualmente las utilizan marcas y empresas para interactuar con sus clientes y prospectos, esto trae cosas muy positivas:</p>
+<ul style:"list-style-type:disc;">
+  <li><b> Compartir la visión de la empresa:</b> las redes sociales suelen mostrar la visión de un negocio.</li>
+  <li><b>La personalización del mensaje y la interacción directa con el cliente:</b> las redes sociales permiten tener una relación personalizada y directa con un cliente y estar en contacto con cada uno en el cual se puedan resolver problemas o recibir nueva información.</li>
+  <li><b>Posibilidad de segmentación del público:</b> en estas se pueden publicar posts de acuerdo con características de la audiencia.</li>
+  <li><b>Poder saber mas sobre cada uno de los clientes:</b> dentro de estas se pueden compartir gustos, deseos e información valiosa para la empresa para poder acercarse al objetivo del público.</li>
+  <li><b>Posibilidad de vender por estos canales: </b>Es posible relacionarse con las personas a través de las redes sociales, y se utilizan para vender los productos o servicios.</li>
+</ul>
+  
+<center><img src="redes-sociales-ventajas-desventajas.jpg" alt="Ventajas de las redes sociales" width="400" height="400"></center>
+
+<p>No solo las redes sociales tienen ventajas para las empresas, sino tambien existen ventajas en la vida cotidiana: 
+ <ul style:"list-style-type:square;">
+  <li>
+   <b>Conexión a nivel mundial:</b>A través de las aplicaciones como Facebook, Twitter o Linkedin se pueden poner en contacto personas que desde hace mucho tiempo no se ven, además conocer a gente o presentarse con personas de una manera en la que no habría sido posible contactar.
+  </li>
+  <li>
+    <b>Grupos:</b>  se pueden crear grupos como por ejemplo en Facebook y en éste se pueden crear una “inteligencia colectiva” con personas de todas partes del mundo. En estos se puede preguntar sobre dudas o publicar información.
+</li>
+  <li>
+     <b>Comunicación instantánea:</b> actualmente con el avance de la tecnología, se puede comunicar con solo teclear en un teléfono móvil u algún ordenador, y puedes ponerte en contacto con personas que en cualquier momento y desde cualquier lugar. Las redes sociales también te sirven para la formación a distancia o presencial. 
+</li>
+
+ <li>
+<b>Aprender idiomas: </b>Gracias a estas nuevas tecnologías puedes aprender idiomas desde la comodidad de tu casa y en cualquier momento.
+</li>
+ <h2>Desventajas de las redes sociales</h2>
+<p>Las redes sociales, como todo, tienen unas desventajas o partes negativas:</p>
+<ul style:"list-style-type:square;">
+ <li>
+    <b>Posibilidad de fraude o de robo de identidad: </b> Uno se arriesga mucho al colocar demasiada información en una red social y a que te roben tu identidad o cometan fraudes con tus datos.</li>
+ <li>
+    <b>Menos cara a cara: </b> Hay personas que pasan mucho tiempo en redes sociales, esto provoca que las habilidades sociales se pierdan ya que no se ponen en práctica. </li>
+ <li>
+    <b>Ruptura de relaciones:  </b>La ruptura de una pareja sucede cuando uno de los integrantes se pone celoso por ver fotos, estar siempre vigilado, pedir acceso a la cuenta de la pareja, agobiar, pasa mucho tiempo en redes sociales y no hace caso, entre otros.</li>
+ <li>
+    <b>Perdida de tiempo y productividad:  </b>Cuando uno se conecta a redes sociales pierde la concentración durante un trabajo o actividad por ver publicaciones sin interés.</li>
+ <li>
+    <b>Construir una falsa autoestima: </b> Esto sucede cuando uno regularmente publica muchas fotos y espera tener muchos likes, y cuando sucede esto su autoestima sube demasiado, pero esto no sucede su autoestima está muy baja.</li>
+ <li>
+    <b>Creerse información falsa:  </b>Actualmente esta de moda las noticias falsas. Estas resultan ser bromas y muy graciosas, y hay otras que son pesadas y provocan problemas en ámbito nacional. No hay que creer todo lo que aparecer en internet.</li>
+
+     </section>
+
+
+  </div>
+  <footer id="footer">
+      <div class="footer__social footer__section">
+          <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-github-original social__icon"></i></span>
+                <span class="social__icon-handler"> <a href="https://github.com/Yazm07"> @Yazm07 </a> </span>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer__more-sites footer__section">
+        <h2>Otras de mis paginas</h2>
+<div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-website"></i></span>
+                <span class="sweb__icon-handler"> <a href="index4.html"> Historia de las redes sociales </a> </span>
+            </div>
+            <div class="social__network"></div>
+                <span class="social__icon-container"><i class="lni lni-website"></i></span>
+                <span class="sweb__icon-handler"> <a href="index5.html"> Tipo de redes sociales </a> </span>
+            </div>
+            <div class="social__network"></div>
+                <span class="social__icon-container"><i class="lni lni-website"></i></span>
+                <span class="sweb__icon-handler"> <a href="index6.html"> Redes sociales mas populares</a> </span>
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
